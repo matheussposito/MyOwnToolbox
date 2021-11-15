@@ -1,4 +1,4 @@
-from MyOwnToolbox.lib import test
+from mspositotoolbox.lib import test
 
 
 def test_test():
