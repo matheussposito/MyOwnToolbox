@@ -5,10 +5,10 @@ install_requirements:
 	@pip install -r requirements.txt
 
 check_code:
-	@flake8 scripts/* MyOwnToolbox/*.py
+	@flake8 scripts/* mspositotoolbox/*.py
 
 black:
-	@black scripts/* MyOwnToolbox/*.py
+	@black scripts/* mspositotoolbox/*.py
 
 test:
 	@coverage run -m pytest tests/*.py
@@ -22,8 +22,8 @@ clean:
 	@rm -f .coverage
 	@rm -fr */__pycache__ */*.pyc __pycache__
 	@rm -fr build dist
-	@rm -fr MyOwnToolbox-*.dist-info
-	@rm -fr MyOwnToolbox.egg-info
+	@rm -fr mspositotoolbox-*.dist-info
+	@rm -fr mspositotoolbox.egg-info
 
 install:
 	@pip install . -U
